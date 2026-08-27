@@ -1,1 +1,0 @@
-# AydinAbadi.github.io
