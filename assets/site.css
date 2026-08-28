@@ -1393,6 +1393,30 @@ p:last-child {
   display: grid;
   grid-template-columns: 0.72fr 1.28fr;
   overflow: hidden;
+  position: relative;
+  transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+}
+
+.person-card:has(.person-card-name-link):hover {
+  border-color: var(--teal-dark);
+  box-shadow: 0 12px 30px rgba(17, 51, 58, 0.1);
+  transform: translateY(-2px);
+}
+
+.person-card-name-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.person-card-name-link::after {
+  content: "";
+  inset: 0;
+  position: absolute;
+}
+
+.person-card-name-link:focus-visible::after {
+  outline: 3px solid var(--teal-dark);
+  outline-offset: -3px;
 }
 
 .person-card > img {
@@ -1423,6 +1447,8 @@ p:last-child {
 .person-card .external-link {
   margin-top: auto;
   padding-top: 1rem;
+  position: relative;
+  z-index: 1;
 }
 
 .person-card-compact {
