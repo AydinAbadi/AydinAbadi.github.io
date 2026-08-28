@@ -1490,7 +1490,8 @@ p:last-child {
 }
 
 .people-preview-grid .person-card-compact > img {
-  aspect-ratio: 1 / 1.03;
+  aspect-ratio: 3 / 4;
+  object-position: center top;
 }
 
 .people-preview-grid .person-card-compact > div {
@@ -1586,11 +1587,14 @@ p:last-child {
 }
 
 .people-full-grid .person-card {
+  grid-template-columns: minmax(280px, 32%) 1fr;
   min-height: 360px;
 }
 
 .people-full-grid .person-card > img {
-  min-height: 360px;
+  aspect-ratio: 3 / 4;
+  min-height: 420px;
+  object-position: center top;
 }
 
 .affiliate-grid {
@@ -2290,7 +2294,7 @@ p:last-child {
   }
 
   .people-full-grid .person-card {
-    grid-template-columns: 0.75fr 1.25fr;
+    grid-template-columns: minmax(240px, 36%) 1fr;
   }
 
   .footer-grid {
@@ -2485,6 +2489,13 @@ p:last-child {
   .people-full-grid .person-card > img {
     aspect-ratio: 4 / 3;
     min-height: 0;
+  }
+
+  .people-preview-grid .person-card > img,
+  .people-full-grid .person-card > img {
+    aspect-ratio: 3 / 4;
+    height: auto;
+    object-position: center top;
   }
 
   .affiliate-grid .person-card-compact > div,
