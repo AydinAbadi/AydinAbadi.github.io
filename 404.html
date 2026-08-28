@@ -1435,6 +1435,34 @@ p:last-child {
   width: 100%;
 }
 
+.person-card-placeholder {
+  align-items: center;
+  aspect-ratio: 1 / 1;
+  background:
+    linear-gradient(135deg, rgba(20, 62, 71, 0.96), rgba(22, 52, 86, 0.96));
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 0;
+  text-align: center;
+}
+
+.person-card-placeholder span {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.38);
+  font-family: var(--serif);
+  font-size: clamp(3rem, 5vw, 4.5rem);
+  line-height: 1;
+  margin-bottom: 0.85rem;
+  padding: 0 0.8rem 0.7rem;
+}
+
+.person-card-placeholder small {
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
 .person-card > div {
   display: flex;
   flex-direction: column;
@@ -1574,7 +1602,16 @@ p:last-child {
 }
 
 .affiliate-grid {
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.affiliate-grid > * {
+  grid-column: span 2;
+}
+
+.affiliate-grid > *:nth-child(4),
+.affiliate-grid > *:nth-child(5) {
+  grid-column: span 3;
 }
 
 .affiliate-grid .person-card-compact > img {
@@ -2143,6 +2180,10 @@ p:last-child {
 
   .affiliate-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .affiliate-grid > * {
+    grid-column: auto;
   }
 }
 
