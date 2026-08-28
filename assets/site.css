@@ -1598,16 +1598,11 @@ p:last-child {
 }
 
 .affiliate-grid {
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.affiliate-grid > * {
-  grid-column: span 2;
-}
-
-.affiliate-grid > *:nth-child(4),
-.affiliate-grid > *:nth-child(5) {
-  grid-column: span 3;
+.affiliate-grid > #yvo-desmedt {
+  order: -1;
 }
 
 .affiliate-grid .person-card-compact > img {
@@ -2190,6 +2185,10 @@ p:last-child {
 
   .mobile-menu {
     display: block;
+  }
+
+  .affiliate-grid {
+    grid-template-columns: 1fr;
   }
 
   .home-hero-grid,
