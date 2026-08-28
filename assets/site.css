@@ -791,8 +791,8 @@ p:last-child {
 }
 
 .lab-feature {
-  background: var(--ink);
-  color: var(--white);
+  background: var(--white);
+  color: var(--text);
   padding-bottom: 5rem;
   padding-top: 5rem;
 }
@@ -806,16 +806,16 @@ p:last-child {
 
 .lab-mark-panel {
   align-items: center;
-  background: var(--white);
+  border-right: 1px solid var(--line);
   display: flex;
   flex-direction: column;
-  min-height: 265px;
   justify-content: center;
-  padding: 2rem;
+  min-height: 300px;
+  padding: 1rem 3rem 1rem 0;
 }
 
 .lab-mark-panel img {
-  max-width: 340px;
+  max-width: 360px;
   width: 100%;
 }
 
@@ -828,31 +828,29 @@ p:last-child {
   text-transform: uppercase;
 }
 
-.lab-feature .eyebrow,
 .contact-band .eyebrow,
 .lab-engage .eyebrow {
   color: #79d8d2;
 }
 
-.lab-feature .eyebrow::before,
 .contact-band .eyebrow::before,
 .lab-engage .eyebrow::before {
   background: #79d8d2;
 }
 
-.lab-feature h2,
 .contact-band h2,
 .lab-engage h2 {
   color: var(--white);
 }
 
 .lab-feature h2 {
+  color: var(--ink);
   font-size: clamp(2.4rem, 4vw, 3.8rem);
   margin-bottom: 1.2rem;
 }
 
 .lab-feature p {
-  color: #bfd0d6;
+  color: var(--muted);
   font-size: 1.02rem;
   max-width: 670px;
 }
@@ -1205,16 +1203,16 @@ p:last-child {
 }
 
 .lab-hero {
-  background: var(--ink-deep);
-  color: var(--white);
+  background: var(--white);
+  color: var(--text);
   overflow: hidden;
   position: relative;
 }
 
 .lab-hero-pattern {
-  background-image: radial-gradient(circle at center, rgba(111, 221, 213, 0.4) 0 2px, transparent 2.5px),
-    linear-gradient(rgba(111, 221, 213, 0.08) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(111, 221, 213, 0.08) 1px, transparent 1px);
+  background-image: radial-gradient(circle at center, rgba(76, 100, 189, 0.22) 0 2px, transparent 2.5px),
+    linear-gradient(rgba(12, 34, 48, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(12, 34, 48, 0.045) 1px, transparent 1px);
   background-position: 0 0, 0 0, 0 0;
   background-size: 78px 78px, 78px 78px, 78px 78px;
   inset: 0 0 0 50%;
@@ -1235,38 +1233,40 @@ p:last-child {
 }
 
 .lab-hero .eyebrow {
-  color: #79d8d2;
+  color: var(--teal-dark);
 }
 
 .lab-hero .eyebrow::before {
-  background: #79d8d2;
+  background: var(--teal);
 }
 
 .lab-hero h1 {
-  color: var(--white);
+  color: var(--ink);
   font-size: clamp(3.35rem, 5.7vw, 5.3rem);
   margin-bottom: 1.5rem;
 }
 
 .lab-hero .hero-lede {
-  color: #d2e1e5;
+  color: #294651;
 }
 
 .lab-hero .hero-role {
-  color: #98afb8;
+  color: var(--muted);
 }
 
 .lab-hero-mark {
   align-items: center;
+  border-left: 1px solid var(--line);
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  min-height: 390px;
+  padding-left: 3.5rem;
 }
 
 .lab-hero-mark img {
-  background: var(--white);
-  box-shadow: var(--shadow-lg);
-  padding: 2rem;
-  width: 100%;
+  max-width: 360px;
+  width: min(100%, 360px);
 }
 
 .lab-signal-list {
@@ -1278,8 +1278,8 @@ p:last-child {
 }
 
 .lab-signal-list span {
-  background: rgba(255, 255, 255, 0.08);
-  color: #c5d7dc;
+  background: var(--paper);
+  color: var(--muted);
   font-size: 0.67rem;
   font-weight: 700;
   line-height: 1.35;
@@ -2190,6 +2190,13 @@ p:last-child {
     grid-template-columns: 1fr;
   }
 
+  .lab-mark-panel {
+    border-bottom: 1px solid var(--line);
+    border-right: 0;
+    min-height: 0;
+    padding: 0 0 2.5rem;
+  }
+
   .page-intro {
     padding: 5rem 0 4.5rem;
   }
@@ -2199,8 +2206,12 @@ p:last-child {
   }
 
   .lab-hero-mark {
+    border-left: 0;
     margin: 0 auto;
     max-width: 580px;
+    min-height: 0;
+    padding-left: 0;
+    width: 100%;
   }
 
   .director-card {
