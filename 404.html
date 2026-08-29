@@ -673,6 +673,18 @@ p:last-child {
   grid-template-columns: repeat(3, 1fr);
 }
 
+.project-grid-featured {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.project-grid-featured > .project-card:nth-child(-n + 2) {
+  grid-column: span 3;
+}
+
+.project-grid-featured > .project-card:nth-child(n + 3) {
+  grid-column: span 2;
+}
+
 .theme-card {
   background: var(--white);
   border: 1px solid var(--line);
@@ -2215,6 +2227,10 @@ p:last-child {
   .theme-card,
   .project-card {
     min-height: 0;
+  }
+
+  .project-grid-featured > .project-card {
+    grid-column: auto;
   }
 
   .lab-feature-grid,
