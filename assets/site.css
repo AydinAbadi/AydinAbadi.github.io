@@ -138,22 +138,6 @@ p:last-child {
 .brand {
   align-items: center;
   display: inline-flex;
-  gap: 0.8rem;
-}
-
-.brand-mark {
-  align-items: center;
-  background: var(--ink);
-  border-radius: 50%;
-  color: var(--white);
-  display: inline-flex;
-  font-family: var(--serif);
-  font-size: 0.95rem;
-  font-weight: 700;
-  height: 42px;
-  justify-content: center;
-  letter-spacing: -0.06em;
-  width: 42px;
 }
 
 .brand-copy {
@@ -2022,23 +2006,10 @@ p:last-child {
   padding-bottom: 4rem;
 }
 
-.footer-brand .brand-mark {
-  background: var(--white);
-  color: var(--ink);
-}
-
-.footer-brand .brand-copy strong {
-  color: var(--white);
-}
-
-.footer-brand .brand-copy small {
-  color: #91a8b1;
-}
-
 .footer-lead > p {
   color: #9eb2ba;
   font-size: 0.85rem;
-  margin-top: 1.2rem;
+  margin-top: 0;
   max-width: 340px;
 }
 
@@ -2276,11 +2247,6 @@ p:last-child {
 
   .brand-copy small {
     display: none;
-  }
-
-  .brand-mark {
-    height: 38px;
-    width: 38px;
   }
 
   .lab-nav {
