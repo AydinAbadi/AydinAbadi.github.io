@@ -2002,15 +2002,8 @@ p:last-child {
 .footer-grid {
   display: grid;
   gap: 3rem;
-  grid-template-columns: 1.4fr repeat(3, 0.75fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   padding-bottom: 4rem;
-}
-
-.footer-lead > p {
-  color: #9eb2ba;
-  font-size: 0.85rem;
-  margin-top: 0;
-  max-width: 340px;
 }
 
 .footer-column {
@@ -2229,10 +2222,6 @@ p:last-child {
   .footer-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-
-  .footer-lead {
-    grid-column: 1 / -1;
-  }
 }
 
 @media (max-width: 720px) {
@@ -2436,10 +2425,6 @@ p:last-child {
 
   .footer-grid {
     grid-template-columns: 1fr;
-  }
-
-  .footer-lead {
-    grid-column: auto;
   }
 
   .footer-base {
