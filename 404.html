@@ -1649,6 +1649,33 @@ p:last-child {
   font-size: 0.88rem;
 }
 
+.institution-routes {
+  border-top: 1px solid var(--line);
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1.25fr 0.75fr;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+}
+
+.institution-routes > p {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin: 0;
+  max-width: 760px;
+}
+
+.institution-routes .card-links {
+  justify-content: flex-end;
+  padding-top: 0;
+}
+
+.scope-note {
+  color: var(--muted);
+  font-size: 0.86rem;
+  margin-bottom: 1.5rem;
+}
+
 .first-message-grid {
   align-items: start;
   display: grid;
@@ -2328,11 +2355,16 @@ p:last-child {
   .engagement-grid,
   .route-card-grid,
   .engagement-detail-grid,
+  .institution-routes,
   .join-route-grid,
   .contact-routes,
   .research-evidence,
   .affiliate-grid {
     grid-template-columns: 1fr;
+  }
+
+  .institution-routes .card-links {
+    justify-content: flex-start;
   }
 
   .engagement-grid article,
