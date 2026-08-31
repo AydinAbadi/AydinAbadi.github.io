@@ -1850,6 +1850,11 @@ p:last-child {
   grid-template-columns: 0.72fr 1.28fr;
 }
 
+.bio-grid-text-only {
+  grid-template-columns: minmax(0, 880px);
+  justify-content: center;
+}
+
 .bio-portrait {
   background: var(--paper);
   padding-bottom: 1.1rem;
