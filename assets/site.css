@@ -1475,7 +1475,10 @@ p:last-child {
 }
 
 .people-preview-grid .person-card-compact > img {
-  aspect-ratio: 3 / 4;
+  aspect-ratio: auto;
+  background: var(--paper);
+  height: 280px;
+  object-fit: contain;
   object-position: center top;
 }
 
@@ -2480,7 +2483,13 @@ p:last-child {
     min-height: 0;
   }
 
-  .people-preview-grid .person-card > img,
+  .people-preview-grid .person-card > img {
+    aspect-ratio: auto;
+    height: 240px;
+    object-fit: contain;
+    object-position: center top;
+  }
+
   .people-full-grid .person-card > img {
     aspect-ratio: 3 / 4;
     height: auto;
