@@ -1,6 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Aydin Abadi">
-  <rect width="64" height="64" rx="32" fill="#0c2230"/>
-  <circle cx="47" cy="17" r="5" fill="#67d5cf"/>
-  <path d="M17 44 28.5 17h7L47 44h-7.2l-2.2-5.8H26L23.8 44H17Zm11.2-11.7h7.1l-3.5-9.6-3.6 9.6Z" fill="#fff"/>
-  <path d="M42 16h10v3H42z" fill="#c9973d"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="CASL">
+  <rect x="1" y="1" width="62" height="62" rx="13" fill="#fff" stroke="#d9d9d9" stroke-width="2"/>
+  <path d="M42.5 10.5A23 23 0 1 0 42.5 53.5" fill="none" stroke="#000" stroke-width="7"/>
+  <circle cx="23" cy="28" r="3" fill="#000"/>
+  <path d="M21.8 30h2.4l1 8h-4.4z" fill="#000"/>
+  <path d="M26 50 41 14l15 36M33 37h16" fill="none" stroke="#07188d" stroke-width="6" stroke-linecap="square" stroke-linejoin="miter"/>
 </svg>
