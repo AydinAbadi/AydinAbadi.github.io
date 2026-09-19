@@ -18,7 +18,8 @@
   --gold: #c9973d;
   --gold-pale: #f3e8cc;
   --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
-  --sans: "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI",
+  --sans:
+    "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI",
     sans-serif;
   --shadow-sm: 0 12px 30px rgba(7, 25, 35, 0.07);
   --shadow-lg: 0 30px 70px rgba(7, 25, 35, 0.16);
@@ -337,7 +338,10 @@ p:last-child {
   line-height: 1.2;
   min-height: 46px;
   padding: 0.82rem 1.05rem;
-  transition: background 180ms ease, border-color 180ms ease, color 180ms ease,
+  transition:
+    background 180ms ease,
+    border-color 180ms ease,
+    color 180ms ease,
     transform 180ms ease;
 }
 
@@ -412,7 +416,9 @@ p:last-child {
   text-decoration: underline;
   text-decoration-color: transparent;
   text-underline-offset: 4px;
-  transition: color 150ms ease, text-decoration-color 150ms ease;
+  transition:
+    color 150ms ease,
+    text-decoration-color 150ms ease;
 }
 
 .text-link:hover,
@@ -428,7 +434,8 @@ p:last-child {
 }
 
 .hero-grid-overlay {
-  background-image: linear-gradient(rgba(12, 34, 48, 0.035) 1px, transparent 1px),
+  background-image:
+    linear-gradient(rgba(12, 34, 48, 0.035) 1px, transparent 1px),
     linear-gradient(90deg, rgba(12, 34, 48, 0.035) 1px, transparent 1px);
   background-size: 34px 34px;
   height: 100%;
@@ -532,11 +539,26 @@ p:last-child {
   z-index: 2;
 }
 
-.protocol-dots i:nth-child(1) { left: 5px; top: 22px; }
-.protocol-dots i:nth-child(2) { left: 72px; top: 3px; }
-.protocol-dots i:nth-child(3) { right: 3px; top: 54px; }
-.protocol-dots i:nth-child(4) { bottom: 9px; left: 38px; }
-.protocol-dots i:nth-child(5) { bottom: 2px; right: 30px; }
+.protocol-dots i:nth-child(1) {
+  left: 5px;
+  top: 22px;
+}
+.protocol-dots i:nth-child(2) {
+  left: 72px;
+  top: 3px;
+}
+.protocol-dots i:nth-child(3) {
+  right: 3px;
+  top: 54px;
+}
+.protocol-dots i:nth-child(4) {
+  bottom: 9px;
+  left: 38px;
+}
+.protocol-dots i:nth-child(5) {
+  bottom: 2px;
+  right: 30px;
+}
 
 .proof-strip {
   background: var(--ink);
@@ -654,7 +676,9 @@ p:last-child {
   flex-direction: column;
   min-height: 350px;
   padding: 1.6rem;
-  transition: border-color 180ms ease, box-shadow 180ms ease,
+  transition:
+    border-color 180ms ease,
+    box-shadow 180ms ease,
     transform 180ms ease;
 }
 
@@ -1146,7 +1170,7 @@ p:last-child {
   font-weight: 700;
 }
 
-.publication-item > div > p:last-child {
+.publication-item > div > p:last-child:not(.publication-venue) {
   color: var(--muted);
   margin-top: 0.55rem;
 }
@@ -1195,11 +1219,22 @@ p:last-child {
 }
 
 .lab-hero-pattern {
-  background-image: radial-gradient(circle at center, rgba(76, 100, 189, 0.22) 0 2px, transparent 2.5px),
+  background-image:
+    radial-gradient(
+      circle at center,
+      rgba(76, 100, 189, 0.22) 0 2px,
+      transparent 2.5px
+    ),
     linear-gradient(rgba(12, 34, 48, 0.045) 1px, transparent 1px),
     linear-gradient(90deg, rgba(12, 34, 48, 0.045) 1px, transparent 1px);
-  background-position: 0 0, 0 0, 0 0;
-  background-size: 78px 78px, 78px 78px, 78px 78px;
+  background-position:
+    0 0,
+    0 0,
+    0 0;
+  background-size:
+    78px 78px,
+    78px 78px,
+    78px 78px;
   inset: 0 0 0 50%;
   mask-image: linear-gradient(to right, transparent, #000 35%);
   opacity: 0.45;
@@ -1379,7 +1414,10 @@ p:last-child {
   grid-template-columns: 0.72fr 1.28fr;
   overflow: hidden;
   position: relative;
-  transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+  transition:
+    border-color 160ms ease,
+    box-shadow 160ms ease,
+    transform 160ms ease;
 }
 
 .person-card:has(.person-card-name-link):hover {
@@ -1415,8 +1453,11 @@ p:last-child {
 .person-card-placeholder {
   align-items: center;
   aspect-ratio: 1 / 1;
-  background:
-    linear-gradient(135deg, rgba(20, 62, 71, 0.96), rgba(22, 52, 86, 0.96));
+  background: linear-gradient(
+    135deg,
+    rgba(20, 62, 71, 0.96),
+    rgba(22, 52, 86, 0.96)
+  );
   color: var(--white);
   display: flex;
   flex-direction: column;
