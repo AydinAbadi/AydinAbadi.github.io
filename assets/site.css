@@ -1407,6 +1407,10 @@ p:last-child {
   grid-template-columns: repeat(3, 1fr);
 }
 
+.people-preview-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
 .person-card {
   background: var(--white);
   border: 1px solid var(--line);
@@ -2241,6 +2245,10 @@ p:last-child {
   }
 
   .affiliate-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .people-preview-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
