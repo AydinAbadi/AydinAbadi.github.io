@@ -1408,7 +1408,19 @@ p:last-child {
 }
 
 .people-preview-grid {
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.people-preview-grid .person-card-compact {
+  grid-column: span 2;
+}
+
+.people-preview-grid .person-card-compact:nth-last-child(2) {
+  grid-column: 2 / span 2;
+}
+
+.people-preview-grid .person-card-compact:last-child {
+  grid-column: 4 / span 2;
 }
 
 .person-card {
@@ -2250,6 +2262,12 @@ p:last-child {
 
   .people-preview-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .people-preview-grid .person-card-compact,
+  .people-preview-grid .person-card-compact:nth-last-child(2),
+  .people-preview-grid .person-card-compact:last-child {
+    grid-column: auto;
   }
 
   .affiliate-grid > * {
